@@ -82,7 +82,7 @@ onMounted(() => {
           id="header-logo"
           v-gsap.magnetic
           href="/"
-          class="font-gwasz text-primary-content inline-block max-w-full justify-self-start text-5xl lg:justify-self-center"
+          class="font-gwasz text-primary-content pointer-cursor inline-block max-w-full justify-self-start text-5xl lg:justify-self-center"
         >GWASZ</a>
       </div>
 
@@ -92,7 +92,7 @@ onMounted(() => {
         </a>
       </div>
 
-      <div class="z-40 col-span-1 row-span-1 col-start-3 justify-self-end">
+      <div v-gsap.magnetic class="z-40 col-span-1 row-span-1 col-start-3 justify-self-end">
         <div class="relative h-16 flex items-center justify-center lg:h-24 lg:w-24">
           <div class="menu-icon">
             <input id="menu-toggle" class="menu-icon__checkbox" type="checkbox">
@@ -197,20 +197,6 @@ onMounted(() => {
   transform: rotate(-45deg);
   bottom: 5px;
   background-color: var(--copy);
-}
-.menu-icon.active:hover span:first-of-type,
-.menu-icon.active:hover span:last-of-type,
-.menu-icon:hover .menu-icon__checkbox:checked + div span:first-of-type,
-.menu-icon:hover .menu-icon__checkbox:checked + div span:last-of-type {
-  width: 32px;
-}
-@media (min-width: 1024px) {
-  .menu-icon:hover span:first-of-type {
-    width: 23px;
-  }
-  .menu-icon:hover span:last-of-type {
-    width: 13px;
-  }
 }
 
 [data-nav-border-reveal] {

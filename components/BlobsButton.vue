@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="relative overflow-hidden">
-    <button class="blob-btn" @click="$router.push('/asdas')">
+    <NuxtLink class="blob-btn" :to="link">
       <slot />
       <span class="blob-btn__inner">
         <span class="blob-btn__blobs">
@@ -19,7 +19,7 @@ defineProps({
           <span class="blob-btn__blob" />
         </span>
       </span>
-    </button>
+    </NuxtLink>
     <div class="absolute">
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
         <defs>
@@ -37,6 +37,7 @@ defineProps({
 <style scoped>
 .blob-btn {
   z-index: 1;
+  display: block;
   position: relative;
   padding: 20px 46px;
   text-align: center;

@@ -64,15 +64,9 @@
   </div>
 </template>
 
-<style>
-.geo-bg {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2.5);
-  z-index: -1;
-  transform-origin: center center;
-  opacity: 0.25;
-  will-change: transform;
+<style scoped>
+h1,
+p {
+  text-wrap: balance;
 }
 </style>

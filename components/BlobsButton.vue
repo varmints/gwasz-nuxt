@@ -42,7 +42,7 @@ defineProps({
   padding: 20px 46px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--secondary);
+  color: var(--primary);
   font-size: 16px;
   font-weight: bold;
   background-color: transparent;

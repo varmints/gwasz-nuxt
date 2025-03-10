@@ -4,7 +4,7 @@
 <template>
   <div
     id="hero"
-    class="background-primary background-texture relative min-h-[100svh] flex items-center justify-center pb-48 pt-32 text-sm font-medium lg:px-20 lg:pt-44"
+    class="background-primary background-texture relative min-h-[100svh] flex items-center justify-center pb-32 pt-32 text-sm font-medium lg:px-20 lg:pt-44 md:pb-42"
   >
     <PrimitivesContainer>
       <div class="m-auto w-full flex-col items-center">
@@ -14,8 +14,8 @@
           <div
             class="row-start-1 flex flex-col items-start justify-start gap-2"
           >
-            <h1 class="text-secondary mx-0 my-3 text-6xl md:text-7xl">
-              Kursy <span class="text-white font-bold">malarstwa</span> i <span class="text-white font-bold">rysunku</span>
+            <h1 class="text-secondary mx-0 my-3 text-6xl font-bold md:text-7xl">
+              Kursy <span class="text-white">malarstwa</span> i <span class="text-white">rysunku</span>
             </h1>
             <div class="mt-6 lg:mt-12">
               <div>
@@ -25,28 +25,38 @@
                 </p>
                 <div class="flex flex-wrap gap-8">
                   <BlobsButton v-gsap.magnetic link="mailto:pracownia@gwasz.pl">
-                    Napisz
+                    Email
                   </BlobsButton>
                   <BlobsButton v-gsap.magnetic link="tel:+48570566238">
-                    Zadzwoń
+                    Telefon
+                  </BlobsButton>
+                  <BlobsButton v-gsap.magnetic link="https://www.instagram.com/gwasz_pracownia/">
+                    Instagram
+                  </BlobsButton>
+                  <BlobsButton v-gsap.magnetic link="https://wa.me/+48570566238">
+                    Whatsapp
+                  </BlobsButton>
+                  <BlobsButton v-gsap.magnetic link="https://www.tiktok.com/@gwasz_pracownia">
+                    Tiktok
+                  </BlobsButton>
+                  <BlobsButton v-gsap.magnetic link="https://www.facebook.com/profile.php?id=61572459933698">
+                    Facebook
                   </BlobsButton>
                 </div>
               </div>
             </div>
           </div>
           <div
-            v-gsap.add.fromInvisible.from="{ x: 0, y: -30 }"
-            class="pointer-events-none relative h-120"
+            class="pointer-events-none col-span-1 row-span-1 justify-self-center"
           >
-            <section v-gsap.timeline.whenVisible="{ start: 'top 30%', end: 'bottom 30%', scrub: 1.5 }" class="absolute bottom-0 left-0 right-0 top-0 h-screen overflow-hidden">
-              <img
-                v-gsap.add.to="{ x: -20, y: 250, rotate: 100 }"
-                src="/images/kwiatek-1.webp"
-                alt="Animowany kwiatek"
-                height="600"
-                width="600"
-              >
-            </section>
+            <img
+              v-gsap.magnetic.stronger
+              v-gsap.preset="'spin'"
+              src="/images/kwiatek-1.webp"
+              alt="Animowany kwiatek"
+              height="600"
+              width="600"
+            >
           </div>
         </div>
       </div>

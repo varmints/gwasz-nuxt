@@ -3,20 +3,20 @@
 
 <template>
   <footer
-    class="background-texture flex flex-col justify-end px-4 pb-10 pt-16 text-sm font-medium lg:px-20"
+    class="background-texture text-primary flex flex-col justify-end font-medium"
   >
+    <div class="brush-accent background-texture background-primary" />
     <PrimitivesContainer>
-      <div class="w-full flex-col items-center">
-        <div class="brush-accent background-texture background-primary h-18" />
+      <div class="w-full flex-col items-center pb-10 pt-8">
         <div
           class="grid auto-cols-fr grid-rows-[auto] grid-cols-1 mt-16 gap-10 md:grid-cols-[1.8fr_.4fr_1fr]"
         >
           <div class="col-span-1 row-span-1">
             <div
-              class="mb-5 flex items-center gap-x-[0.63rem] text-white font-semibold uppercase"
+              class="mb-5 flex items-center gap-x-[0.63rem] font-semibold uppercase"
             >
               <div
-                class="flex items-center border-2 border-white rounded-3xl border-solid px-5 py-3"
+                class="flex items-center border-2 border-white rounded-3xl border-solid px-6 py-3 text-white font-bold"
               >
                 <div>Linki</div>
               </div>
@@ -30,12 +30,12 @@
                     class="flex flex-col items-start gap-[0.63rem]"
                   >
                     <p
-                      class="mb-3 border-b-2 border-white border-solid pb-1 text-lg text-white"
+                      class="mb-3 border-b-2 border-white border-solid pb-1 text-lg"
                     >
                       Sociale
                     </p>
                     <ul
-                      class="text-copy-lighter mb-3 list-none"
+                      class="mb-3 list-none"
                     >
                       <li>
                         <NuxtLink to="https://www.instagram.com/gwasz_pracownia/" target="_blank">
@@ -60,11 +60,11 @@
                   class="flex flex-col items-start gap-[0.63rem]"
                 >
                   <p
-                    class="mb-3 border-b-2 border-white border-solid pb-1 text-lg text-white"
+                    class="mb-3 border-b-2 border-white border-solid pb-1 text-lg"
                   >
                     Wskazówki dojazdu
                   </p>
-                  <ul class="text-copy-lighter mb-3 list-none">
+                  <ul class="mb-3 list-none">
                     <li>
                       <NuxtLink to="https://maps.app.goo.gl/zh6tuc4QY35S5NU2A" target="_blank">
                         Kliknij, aby otrzymać wskazówki dojazdu w mapach Google.
@@ -79,12 +79,12 @@
             </div>
           </div>
           <div class="col-span-1 row-span-1" />
-          <div class="col-span-1 row-span-1 text-white">
+          <div class="col-span-1 row-span-1">
             <div
               class="mb-5 flex items-center justify-end gap-x-[0.63rem] font-semibold uppercase lg:justify-start"
             >
               <div
-                class="flex items-center border-2 border-white rounded-3xl border-solid px-5 py-3"
+                class="flex items-center border-2 border-white rounded-3xl border-solid px-6 py-3 text-white font-bold"
               >
                 <div>Bądźmy w kontakcie</div>
               </div>
@@ -109,35 +109,35 @@
         </div>
         <div class="mt-16">
           <div class="flex flex-wrap items-center justify-between gap-4">
-            <p class="text-copy-lighter order-3 text-base md:order-1">
+            <p class="order-3 text-base md:order-1">
               © 2025 Pracownia Gwasz
             </p>
             <div class="order-4 flex gap-4 md:order-3">
               <div
-                class="relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden rounded-md bg-white px-2 py-1 text-black"
+                class="relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden rounded-md bg-white px-3 py-1"
               >
                 <span class="overflow-hidden text-lg md:text-xl">
                   <span>pl</span>
                 </span>
               </div>
               <div
-                class="relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden text-white"
+                class="relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden"
               >
                 <span class="overflow-hidden text-lg md:text-xl">
                   <span>en</span>
                 </span>
               </div>
             </div>
-            <div class="order-1 flex gap-5 text-lg text-blue-700 md:order-3">
+            <div class="order-1 flex gap-5 text-lg md:order-3">
               <div class="inline-block max-w-full">
                 <p
-                  class="border-b-2 border-white border-solid pb-1 text-white"
+                  class="border-b-2 border-white border-solid pb-1"
                 >
                   Polityka prywatności
                 </p>
               </div><div class="inline-block max-w-full">
                 <p
-                  class="border-b-2 border-white border-solid pb-1 text-white"
+                  class="border-b-2 border-white border-solid pb-1"
                 >
                   Regulamin
                 </p>
@@ -153,12 +153,12 @@
 
 <style>
 .brush-accent {
-  mask-image: url(/images/brush.svg);
-  mask-repeat: no-repeat;
-  mask-size: 100% 100%;
+  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0 0v60c9 0 18-3 25-10 13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s37 13 50 0c14-14 37-14 50 0 7 7 16 10 25 10V0H0Z" fill="%23000"></path></svg>');
+  margin-top: -1px;
+  padding-top: 10%;
 }
 
 footer {
-  background-color: var(--secondary-content);
+  background-color: var(--secondary);
 }
 </style>

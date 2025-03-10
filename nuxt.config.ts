@@ -6,5 +6,14 @@ export default defineNuxtConfig({
   fonts: {
     families: [{ name: 'Inter Tight', provider: 'fontsource' }, { name: 'Marker Felt', provider: 'local' }],
   },
+  vgsap: {
+    presets: [
+      {
+        name: 'spin',
+        modifiers: 'infinitely.to',
+        value: { rotate: '360deg', ease: 'linear', duration: 16 },
+      },
+    ],
+  },
   compatibilityDate: '2024-11-01',
 })

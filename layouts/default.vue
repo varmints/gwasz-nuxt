@@ -3,7 +3,7 @@
 
 <template>
   <MainHeader />
-  <main>
+  <main class="overflow-hidden">
     <slot />
   </main>
   <MainFooter />

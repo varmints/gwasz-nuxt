@@ -64,6 +64,10 @@ body {
   color: var(--copy-lighter);
 }
 
+.text-primary {
+  color: var(--primary-dark);
+}
+
 .background-primary {
   background-color: var(--primary);
 }

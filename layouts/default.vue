@@ -1,9 +1,4 @@
 <script setup>
-useHead({
-  bodyAttrs: {
-    class: 'background-texture',
-  },
-})
 </script>
 
 <template>

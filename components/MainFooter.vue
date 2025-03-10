@@ -3,11 +3,11 @@
 
 <template>
   <footer
-    class="flex flex-col justify-end px-4 pb-10 pt-16 text-sm font-medium lg:px-20"
+    class="background-texture flex flex-col justify-end px-4 pb-10 pt-16 text-sm font-medium lg:px-20"
   >
     <PrimitivesContainer>
       <div class="w-full flex-col items-center">
-        <div class="brush-accent background-texture h-18" />
+        <div class="brush-accent background-texture background-primary h-18" />
         <div
           class="grid auto-cols-fr grid-rows-[auto] grid-cols-1 mt-16 gap-10 md:grid-cols-[1.8fr_.4fr_1fr]"
         >
@@ -99,15 +99,15 @@
                 </NuxtLink>
                 <NuxtLink
                   class="mb-3 border-b-2 border-white border-solid pb-1"
-                  to="mailto:sandra@gwasz.pl"
+                  to="mailto:pracownia@gwasz.pl"
                 >
-                  sandra@gwasz.pl
+                  pracownia@gwasz.pl
                 </NuxtLink>
               </div>
             </div>
           </div>
         </div>
-        <div class="mb-10 mt-16 sm:mb-0">
+        <div class="mt-16">
           <div class="flex flex-wrap items-center justify-between gap-4">
             <p class="text-copy-lighter order-3 text-base md:order-1">
               © 2025 Pracownia Gwasz

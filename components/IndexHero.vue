@@ -4,7 +4,7 @@
 <template>
   <div
     id="hero"
-    class="relative min-h-[100svh] flex items-center justify-center pb-48 pt-32 text-sm font-medium lg:px-20 lg:pt-44"
+    class="background-primary background-texture relative min-h-[100svh] flex items-center justify-center pb-48 pt-32 text-sm font-medium lg:px-20 lg:pt-44"
   >
     <PrimitivesContainer>
       <div class="m-auto w-full flex-col items-center">
@@ -14,17 +14,17 @@
           <div
             class="row-start-1 flex flex-col items-start justify-start gap-2"
           >
-            <h1 class="mx-0 my-3 text-6xl md:text-7xl">
+            <h1 class="text-secondary mx-0 my-3 text-6xl md:text-7xl">
               Kursy <span class="text-white font-bold">malarstwa</span> i <span class="text-white font-bold">rysunku</span>
             </h1>
             <div class="mt-6 lg:mt-12">
               <div>
-                <p class="mb-10 text-3xl font-semibold">
+                <p class="text-secondary mb-10 text-3xl font-semibold">
                   Dla dzieci, młodzieży i dorosłych. <span class="text-white">Zapisz się na zajęcia
                     próbne.</span>
                 </p>
                 <div class="flex flex-wrap gap-8">
-                  <BlobsButton v-gsap.magnetic link="mailto:sandra@gwasz.pl">
+                  <BlobsButton v-gsap.magnetic link="mailto:pracownia@gwasz.pl">
                     Napisz
                   </BlobsButton>
                   <BlobsButton v-gsap.magnetic link="tel:+48570566238">

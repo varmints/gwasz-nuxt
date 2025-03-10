@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['@unocss/reset/tailwind-compat.css', '~/assets/css/main.css'],
   fonts: {
-    provider: 'fontsource',
+    families: [{ name: 'Inter Tight', provider: 'fontsource' }, { name: 'Marker Felt', provider: 'local' }],
   },
   compatibilityDate: '2024-11-01',
 })

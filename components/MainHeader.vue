@@ -116,7 +116,7 @@ onMounted(() => {
       <div
         class="z-20 w-full flex flex-col flex-wrap items-center justify-center overflow-hidden font-semibold"
       >
-        <div class="flex flex-col items-center pt-10">
+        <div class="flex flex-col items-center">
           <div
             v-for="(page, index) in dummyPages"
             :key="index"
@@ -132,7 +132,7 @@ onMounted(() => {
             </div>
             <div
               data-nav-text-reveal
-              class="xs:text-5xl cursor-pointer overflow-hidden text-4xl md:text-[5.63rem] !leading-[1.15]"
+              class="cursor-pointer overflow-hidden text-5xl leading-tight md:text-[5.63rem]"
             >
               {{ page.title }}
             </div>

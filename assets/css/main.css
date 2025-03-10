@@ -48,6 +48,10 @@ body {
   color: var(--primary);
 }
 
+.text-secondary {
+  color: var(--secondary);
+}
+
 .text-primary-content {
   color: var(--primary-content);
 }
@@ -60,8 +64,11 @@ body {
   color: var(--copy-lighter);
 }
 
-.background-texture {
+.background-primary {
   background-color: var(--primary);
+}
+
+.background-texture {
   background-image: url(/images/texture.png);
   background-position: 0 0;
   background-size: auto;

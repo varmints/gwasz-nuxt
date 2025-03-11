@@ -91,6 +91,12 @@
             </div>
             <div class="mt-10 text-lg">
               <div class="flex flex-col items-end lg:items-start">
+                <p>
+                  ul. Oswobodzenia 1/C3
+                </p>
+                <p class="mb-3">
+                  40-403 Katowice
+                </p>
                 <NuxtLink
                   class="mb-3 border-b-2 border-white border-solid pb-1"
                   to="tel:+48570566238"
@@ -112,7 +118,7 @@
             <p class="order-3 text-base md:order-1">
               © 2025 Pracownia Gwasz
             </p>
-            <div class="order-4 flex gap-4 md:order-3">
+            <div class="order-4 mx-4 flex gap-4 md:order-3">
               <div
                 class="relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden rounded-md bg-white px-3 py-1"
               >

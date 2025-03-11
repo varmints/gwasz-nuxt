@@ -1,4 +1,10 @@
 <script lang="ts" setup>
+const { locale, locales } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
+
+const activeLocale = computed(() => {
+  return locales.value.filter(i => i.code === locale.value)
+})
 </script>
 
 <template>
@@ -119,20 +125,16 @@
               © 2025 Pracownia Gwasz
             </p>
             <div class="order-4 mx-4 flex gap-4 md:order-3">
-              <div
-                class="relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden rounded-md bg-white px-3 py-1"
-              >
-                <span class="overflow-hidden text-lg md:text-xl">
-                  <span>pl</span>
-                </span>
-              </div>
-              <div
-                class="relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden"
-              >
-                <span class="overflow-hidden text-lg md:text-xl">
-                  <span>en</span>
-                </span>
-              </div>
+              <template v-for="lang in locales" :key="lang.code">
+                <div
+                  class="relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden"
+                  :class="activeLocale[0].code === lang.code ? 'rounded-md bg-white px-3 py-1' : null"
+                >
+                  <NuxtLink :to="switchLocalePath(lang.code)" class="overflow-hidden text-lg md:text-xl">
+                    {{ lang.name ?? lang.code }}
+                  </NuxtLink>
+                </div>
+              </template>
             </div>
             <div class="order-1 flex gap-5 text-lg md:order-3">
               <div class="inline-block max-w-full">

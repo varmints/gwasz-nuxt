@@ -4,7 +4,7 @@
 <template>
   <div
     id="hero"
-    class="relative min-h-[100svh] flex items-center justify-center pb-32 pt-32 text-sm font-medium lg:px-20 lg:pt-44 md:pb-42"
+    class="relative flex items-center justify-center pb-32 pt-32 text-sm font-medium lg:px-20 lg:pt-44"
   >
     <PrimitivesContainer>
       <div class="m-auto w-full flex-col items-center">

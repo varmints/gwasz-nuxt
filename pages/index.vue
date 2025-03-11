@@ -1,9 +1,11 @@
 <script lang="ts" setup>
+const { t } = useI18n()
+
 useSeoMeta({
-  title: 'Pracownia Gwasz - kursy malarstwa i rysunku',
-  ogTitle: 'Pracownia Gwasz - kursy malarstwa i rysunku',
-  description: 'Kursy malarstwa i rysunku dla dzieci, młodzieży i dorosłych. Zapisz się na zajęcia próbne.',
-  ogDescription: 'Kursy malarstwa i rysunku dla dzieci, młodzieży i dorosłych. Zapisz się na zajęcia próbne.',
+  title: t('layouts.title'),
+  ogTitle: t('layouts.title'),
+  description: t('layouts.description'),
+  ogDescription: t('layouts.description'),
   ogImage: '',
 })
 </script>

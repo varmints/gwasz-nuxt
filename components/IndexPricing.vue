@@ -24,7 +24,7 @@
           </div>
           <div class="pricing-item">
             <div class="left">
-              Zajęcia 4 razy w miesiącu
+              Zajęcia 4x/mies.
             </div>
             <div class="dots" />
             <div class="right">
@@ -33,7 +33,7 @@
           </div>
           <div class="pricing-item">
             <div class="left">
-              Zajęcia 2 razy w miesiącu
+              Zajęcia 2x/mies.
             </div>
             <div class="dots" />
             <div class="right">
@@ -56,7 +56,7 @@
           </div>
           <div class="pricing-item">
             <div class="left">
-              Zajęcia 4 razy w miesiącu
+              Zajęcia 4x/mies.
             </div>
             <div class="dots" />
             <div class="right">
@@ -65,7 +65,7 @@
           </div>
           <div class="pricing-item">
             <div class="left">
-              Zajęcia 2 razy w miesiącu
+              Zajęcia 2x/mies.
             </div>
             <div class="dots" />
             <div class="right">
@@ -83,17 +83,47 @@
 </template>
 
 <style scoped>
+/* The animation code */
+@keyframes border {
+  0% {
+    box-shadow:
+      white 0px 0px 0px 4px,
+      var(--secondary) 0px 0px 0px 8px,
+      var(--secondary) 0px 0px 0px 12px,
+      var(--secondary) 0px 0px 0px 16px;
+  }
+  25% {
+    box-shadow:
+      var(--secondary) 0px 0px 0px 4px,
+      white 0px 0px 0px 8px,
+      var(--secondary) 0px 0px 0px 12px,
+      var(--secondary) 0px 0px 0px 16px;
+  }
+  50% {
+    box-shadow:
+      var(--secondary) 0px 0px 0px 4px,
+      var(--secondary) 0px 0px 0px 8px,
+      white 0px 0px 0px 12px,
+      var(--secondary) 0px 0px 0px 16px;
+  }
+  75% {
+    box-shadow:
+      var(--secondary) 0px 0px 0px 4px,
+      var(--secondary) 0px 0px 0px 8px,
+      var(--secondary) 0px 0px 0px 12px,
+      white 0px 0px 0px 16px;
+  }
+}
+
 .tv {
-  max-width: 900px;
+  max-width: 600px;
   position: relative;
   width: 100%;
   background: var(--secondary);
-  box-shadow:
-    rgb(85, 91, 255) 0px 0px 0px 4px,
-    rgb(31, 193, 27) 0px 0px 0px 8px,
-    rgb(255, 217, 19) 0px 0px 0px 12px,
-    rgb(255, 156, 85) 0px 0px 0px 16px,
-    rgb(255, 85, 85) 0px 0px 0px 20px;
+  animation-name: border;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
 }
 
 .pricing-card {

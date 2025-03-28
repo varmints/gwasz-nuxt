@@ -104,6 +104,7 @@
   font-size: 2rem;
   color: var(--primary);
   font-weight: 700;
+  line-height: 1.25;
   text-align: center;
   margin-bottom: 2rem;
 }

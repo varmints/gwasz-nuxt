@@ -18,27 +18,27 @@ onMounted(() => {
     </h2>
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 sm:grid-cols-2">
       <figure class="alt">
-        <NuxtImg src="/images/gallery/01.jpg" alt="5-10 lat" loading="lazy" width="300" height="300" />
+        <NuxtImg src="/images/gallery/01.jpg" alt="5-10 lat" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>5-10 lat</figcaption>
       </figure>
       <figure>
-        <NuxtImg src="/images/gallery/02.jpg" alt="10-16 lat" loading="lazy" width="300" height="300" />
+        <NuxtImg src="/images/gallery/02.jpg" alt="10-16 lat" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>10-16 lat</figcaption>
       </figure>
       <figure>
-        <NuxtImg src="/images/gallery/03.jpg" alt="Dorośli" loading="lazy" width="300" height="300" />
+        <NuxtImg src="/images/gallery/03.jpg" alt="Dorośli" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>Dorośli</figcaption>
       </figure>
       <figure>
-        <NuxtImg src="/images/gallery/04.jpg" alt="Półkolonie" loading="lazy" width="300" height="300" />
+        <NuxtImg src="/images/gallery/04.jpg" alt="Półkolonie" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>Półkolonie</figcaption>
       </figure>
       <figure class="alt">
-        <NuxtImg src="/images/gallery/05.jpg" alt="Urodziny" loading="lazy" width="300" height="300" />
+        <NuxtImg src="/images/gallery/05.jpg" alt="Urodziny" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>Urodziny</figcaption>
       </figure>
       <figure class="alt">
-        <NuxtImg src="/images/gallery/06.jpg" alt="Warsztaty" loading="lazy" width="300" height="300" />
+        <NuxtImg src="/images/gallery/06.jpg" alt="Warsztaty" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>Warsztaty</figcaption>
       </figure>
     </div>

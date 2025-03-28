@@ -19,7 +19,7 @@ defineProps({
     :is="tag"
     :id="id"
     v-bind="$attrs"
-    class="container-base max-w-[90rem] mx-auto"
+    class="container-base mx-auto max-w-[90rem]"
   >
     <slot />
   </component>

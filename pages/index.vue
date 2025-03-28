@@ -12,6 +12,8 @@ useSeoMeta({
 
 <template>
   <IndexHero />
+  <IndexGallery />
+  <IndexPricing />
 </template>
 
 <style></style>

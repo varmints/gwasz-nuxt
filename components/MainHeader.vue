@@ -82,7 +82,7 @@ onMounted(() => {
           id="header-logo"
           v-gsap.magnetic
           href="/"
-          class="font-gwasz text-primary-content pointer-cursor inline-block max-w-full justify-self-start text-5xl lg:justify-self-center"
+          class="pointer-cursor font-gwasz text-primary-content inline-block max-w-full justify-self-start text-5xl lg:justify-self-center"
         >GWASZ</a>
       </div>
 

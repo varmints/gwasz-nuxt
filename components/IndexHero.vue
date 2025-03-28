@@ -4,7 +4,7 @@
 <template>
   <div
     id="hero"
-    class="relative flex items-center justify-center pb-32 pt-32 text-sm font-medium lg:px-20 lg:pt-44"
+    class="relative flex items-center justify-center pb-16 pt-32 text-sm font-medium lg:px-20 lg:pt-44"
   >
     <PrimitivesContainer>
       <div class="m-auto w-full flex-col items-center">
@@ -21,7 +21,7 @@
               <div>
                 <p class="text-secondary mb-10 text-3xl font-semibold">
                   Dla dzieci, młodzieży i dorosłych. <span class="text-white">Zapisz się na zajęcia
-                    próbne.</span>
+                    próbne:</span>
                 </p>
                 <div class="flex flex-wrap gap-8">
                   <BlobsButton v-gsap.magnetic link="mailto:pracownia@gwasz.pl">

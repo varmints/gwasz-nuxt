@@ -11,7 +11,7 @@ const activeLocale = computed(() => {
   <footer
     class="background-texture text-primary flex flex-col justify-end font-medium"
   >
-    <div class="brush-accent background-texture background-primary" />
+    <div class="background-texture brush-accent background-primary" />
     <PrimitivesContainer>
       <div class="w-full flex-col items-center pb-10 pt-8">
         <div

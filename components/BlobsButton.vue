@@ -39,7 +39,7 @@ defineProps({
   z-index: 1;
   display: block;
   position: relative;
-  padding: 20px 46px;
+  padding: 20px 40px;
   text-align: center;
   text-transform: uppercase;
   color: var(--primary);

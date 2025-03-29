@@ -8,10 +8,10 @@ const activeLocale = computed(() => {
 </script>
 
 <template>
+  <div class="background-texture waves-accent background-primary" />
   <footer
     class="background-texture text-primary flex flex-col justify-end font-medium"
   >
-    <div class="background-texture brush-accent background-primary" />
     <PrimitivesContainer>
       <div class="w-full flex-col items-center pb-10 pt-8">
         <div
@@ -160,13 +160,19 @@ const activeLocale = computed(() => {
 </template>
 
 <style>
-.brush-accent {
-  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0 0v60c9 0 18-3 25-10 13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s37 13 50 0c14-14 37-14 50 0 7 7 16 10 25 10V0H0Z" fill="%23000"></path></svg>');
-  margin-top: -1px;
-  padding-top: 10%;
+.waves-accent {
+  --size: 40px;
+  --R: calc(var(--size) * 1.28);
+  mask:
+    radial-gradient(var(--R) at 50% calc(1.8 * var(--size)), #000 99%, #0000 101%) calc(50% - 2 * var(--size)) 0 /
+      calc(4 * var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(-0.8 * var(--size)), #0000 99%, #000 101%) 50% var(--size) /
+      calc(4 * var(--size)) 100% repeat-x;
+  height: 100px;
 }
 
-footer {
+footer,
+.waves-accent {
   background-color: var(--secondary);
 }
 </style>

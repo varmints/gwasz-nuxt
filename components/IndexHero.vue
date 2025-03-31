@@ -14,12 +14,12 @@
           <div
             class="row-start-1 flex flex-col items-start justify-start gap-2"
           >
-            <h1 class="text-secondary mx-0 my-3 text-6xl font-bold md:text-7xl">
+            <h1 class="text-secondary mx-0 my-3 text-5xl font-bold">
               Kursy <span class="text-white">malarstwa</span> i <span class="text-white">rysunku</span>
             </h1>
-            <div class="mt-6 lg:mt-12">
+            <div class="mt-6 lg:mt-10">
               <div>
-                <p class="text-secondary mb-10 text-3xl font-semibold">
+                <p class="text-secondary mb-10 text-2xl font-semibold">
                   Dla dzieci, młodzieży i dorosłych. <span class="text-white">Zapisz się na zajęcia
                     próbne:</span>
                 </p>

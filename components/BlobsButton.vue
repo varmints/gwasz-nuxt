@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="relative overflow-hidden">
-    <NuxtLink class="blob-btn" :to="link">
+    <NuxtLink class="blob-btn text-base" :to="link">
       <slot />
       <span class="blob-btn__inner">
         <span class="blob-btn__blobs">
@@ -39,17 +39,16 @@ defineProps({
   z-index: 1;
   display: block;
   position: relative;
-  padding: 20px 40px;
+  padding: 1.44rem 2.074rem;
   text-align: center;
   text-transform: uppercase;
   color: var(--primary);
-  font-size: 16px;
   font-weight: bold;
   background-color: transparent;
   outline: none;
   transition: color 0.5s;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 50%;
 }
 .blob-btn:before {
   content: '';

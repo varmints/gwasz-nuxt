@@ -13,7 +13,7 @@ onMounted(() => {
 
 <template>
   <div class="relative flex flex-col items-center justify-center pb-16 pt-16 text-sm font-medium lg:px-20">
-    <h2 class="relative mb-14 text-6xl text-white font-bold md:text-7xl">
+    <h2 class="relative mb-14 text-5xl text-white font-bold md:text-5xl">
       <span class="text-secondary">Oferta</span> zajęć
     </h2>
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 sm:grid-cols-2">
@@ -56,10 +56,10 @@ figure {
   --r: 0.5em; /* radius */
   /* --_x: calc(var(--w) - 3 * var(--r) - 0.5lh); */
   --figcaption-width: 0;
-  --_x: calc(var(--figcaption-width) - 3 * 20px); /* 20px is the half font-size of the figure */
+  --_x: calc(var(--figcaption-width) - 3 * 19.53px); /* 20px is the half font-size of the figure */
   display: grid;
   place-items: end end;
-  font-size: 40px;
+  font-size: 39.06px;
   font-weight: 700;
   line-height: 1.5;
   cursor: pointer;
@@ -97,8 +97,6 @@ figure.alt img {
   mask-repeat: no-repeat;
 }
 figure figcaption {
-  height: 1lh;
-  width: auto;
   box-sizing: border-box;
   translate: calc(0.5lh - var(--r)) calc(0.5lh - var(--r));
   background: var(--secondary);

@@ -82,13 +82,13 @@ onMounted(() => {
           id="header-logo"
           v-gsap.magnetic
           href="/"
-          class="pointer-cursor font-gwasz text-primary-content inline-block max-w-full justify-self-start text-5xl lg:justify-self-center"
+          class="font-gwasz text-primary-content inline-block max-w-full justify-self-start text-4xl lg:justify-self-center"
         >GWASZ</a>
       </div>
 
       <div class="col-start-2 hidden h-full items-center justify-center lg:flex">
         <a data-company-name class="group" href="/">
-          <div class="font-gwasz text-primary-content text-6xl" />
+          <div class="font-gwasz text-primary-content text-5xl" />
         </a>
       </div>
 
@@ -116,7 +116,7 @@ onMounted(() => {
       <div
         class="z-20 w-full flex flex-col flex-wrap items-center justify-center overflow-hidden font-semibold"
       >
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center gap-2">
           <div
             v-for="(page, index) in dummyPages"
             :key="index"
@@ -132,7 +132,7 @@ onMounted(() => {
             </div>
             <div
               data-nav-text-reveal
-              class="cursor-pointer overflow-hidden text-5xl leading-tight md:text-[5.63rem]"
+              class="cursor-pointer overflow-hidden text-5xl md:text-5xl md:leading-tight"
             >
               {{ page.title }}
             </div>

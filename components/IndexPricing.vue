@@ -3,16 +3,16 @@
 </script>
 
 <template>
-  <div class="relative mx-5 flex flex-col items-center justify-center pb-16 pt-16 text-sm font-medium lg:mx-20">
-    <h2 class="relative mb-14 text-4xl text-white font-bold md:text-5xl">
+  <div class="relative mx-5 flex flex-col items-center justify-center pb-16 pt-16 font-medium lg:mx-20">
+    <h2 class="relative mb-14 text-white font-bold">
       <span class="text-secondary">Cennik</span> zajęć
     </h2>
     <div class="background-texture pricing-card">
-      <h3 class="pricing-title text-3xl">
+      <h4 class="pricing-title">
         5-10 lat (1.5h) *
-      </h3>
-      <div class="flex flex-col gap-4">
-        <div class="pricing-item text-lg">
+      </h4>
+      <div class="flex flex-col gap-6">
+        <div class="pricing-item">
           <div class="left">
             Zajęcia próbne
           </div>
@@ -21,7 +21,7 @@
             50 zł
           </div>
         </div>
-        <div class="pricing-item text-lg">
+        <div class="pricing-item">
           <div class="left">
             Zajęcia 4x/mies.
           </div>
@@ -30,7 +30,7 @@
             200 zł
           </div>
         </div>
-        <div class="pricing-item text-lg">
+        <div class="pricing-item">
           <div class="left">
             Zajęcia 2x/mies.
           </div>
@@ -40,11 +40,11 @@
           </div>
         </div>
       </div>
-      <h3 class="pricing-title mt-14 text-2xl">
+      <h4 class="pricing-title mt-14">
         10-16 lat / dorośli (3h) *
-      </h3>
-      <div class="flex flex-col gap-4">
-        <div class="pricing-item text-lg">
+      </h4>
+      <div class="flex flex-col gap-6">
+        <div class="pricing-item">
           <div class="left">
             Zajęcia próbne
           </div>
@@ -53,7 +53,7 @@
             70 zł
           </div>
         </div>
-        <div class="pricing-item text-lg">
+        <div class="pricing-item">
           <div class="left">
             Zajęcia 4x/mies.
           </div>
@@ -62,7 +62,7 @@
             300 zł
           </div>
         </div>
-        <div class="pricing-item text-lg">
+        <div class="pricing-item">
           <div class="left">
             Zajęcia 2x/mies.
           </div>
@@ -73,7 +73,7 @@
         </div>
       </div>
       <br>
-      <div class="pricing-note text-base">
+      <div class="pricing-note">
         * - darmowe materiały tylko na próbnych zajęciach
       </div>
     </div>
@@ -87,18 +87,14 @@
   width: 100%;
   background-color: var(--secondary);
   padding: 3rem;
+  border-radius: 50px;
 }
 
 .pricing-title {
   color: var(--primary);
   font-weight: 700;
-  line-height: 1.25;
   text-align: center;
   margin-bottom: 2rem;
-}
-
-.pricing-item {
-  color: var(--primary);
 }
 
 .pricing-note {
@@ -107,6 +103,8 @@
 }
 
 .pricing-item {
+  font-size: var(--font-size-h6);
+  line-height: 1;
   display: flex;
   width: 100%;
   align-items: end;

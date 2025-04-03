@@ -13,7 +13,7 @@ onMounted(() => {
 
 <template>
   <div class="relative flex flex-col items-center justify-center pb-16 pt-16 text-sm font-medium lg:px-20">
-    <h2 class="relative mb-14 text-5xl text-white font-bold md:text-5xl">
+    <h2 class="relative mb-14 text-white font-bold">
       <span class="text-secondary">Oferta</span> zajęć
     </h2>
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 sm:grid-cols-2">
@@ -56,10 +56,10 @@ figure {
   --r: 0.5em; /* radius */
   /* --_x: calc(var(--w) - 3 * var(--r) - 0.5lh); */
   --figcaption-width: 0;
-  --_x: calc(var(--figcaption-width) - 3 * 19.53px); /* 20px is the half font-size of the figure */
+  --_x: calc(var(--figcaption-width) - 3 * calc(var(--font-size-h4) / 2));
   display: grid;
   place-items: end end;
-  font-size: 39.06px;
+  font-size: var(--font-size-h4);
   font-weight: 700;
   line-height: 1.5;
   cursor: pointer;

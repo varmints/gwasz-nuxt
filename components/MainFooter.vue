@@ -8,25 +8,16 @@ const activeLocale = computed(() => {
 </script>
 
 <template>
-  <div class="background-texture waves-accent background-primary" />
+  <div class="background-texture waves-accent background-primary mt-16" />
   <footer
     class="background-texture text-primary flex flex-col justify-end font-medium"
   >
     <PrimitivesContainer>
-      <div class="w-full flex-col items-center pb-10 pt-8">
+      <div class="w-full flex-col items-center pb-10">
         <div
           class="grid auto-cols-fr grid-rows-[auto] grid-cols-1 mt-16 gap-10 md:grid-cols-[1.8fr_.4fr_1fr]"
         >
           <div class="col-span-1 row-span-1">
-            <div
-              class="flex items-center gap-x-[0.63rem] font-semibold uppercase"
-            >
-              <div
-                class="flex items-center text-lg text-white font-bold"
-              >
-                Linki
-              </div>
-            </div>
             <div class="mt-8">
               <div
                 class="grid auto-cols-fr grid-cols-[1fr_1fr] grid-rows-[auto] gap-[1.88rem]"
@@ -35,13 +26,13 @@ const activeLocale = computed(() => {
                   <div
                     class="flex flex-col items-start gap-[0.63rem]"
                   >
-                    <div
-                      class="mb-3 border-b-2 border-white border-solid pb-1 text-lg leading-normal"
+                    <h6
+                      class="mb-4 font-medium underline decoration-2 decoration-white underline-offset-10"
                     >
                       Sociale
-                    </div>
+                    </h6>
                     <ul
-                      class="mb-3 list-none text-base leading-normal"
+                      class="mb-3 list-none"
                     >
                       <li>
                         <NuxtLink to="https://www.instagram.com/gwasz_pracownia/" target="_blank">
@@ -65,12 +56,12 @@ const activeLocale = computed(() => {
                 <div
                   class="flex flex-col items-start gap-[0.63rem]"
                 >
-                  <div
-                    class="mb-3 border-b-2 border-white border-solid pb-1 text-lg leading-normal"
+                  <h6
+                    class="mb-4 font-medium underline decoration-2 decoration-white underline-offset-10"
                   >
                     Wskazówki dojazdu
-                  </div>
-                  <ul class="mb-3 list-none text-base leading-normal">
+                  </h6>
+                  <ul class="mb-3 list-none text-base">
                     <li>
                       <NuxtLink to="https://maps.app.goo.gl/zh6tuc4QY35S5NU2A" target="_blank">
                         Kliknij, aby otrzymać wskazówki dojazdu w mapach Google.
@@ -86,31 +77,24 @@ const activeLocale = computed(() => {
           </div>
           <div class="col-span-1 row-span-1" />
           <div class="col-span-1 row-span-1">
-            <div
-              class="mb-5 flex items-center justify-end gap-x-[0.63rem] font-semibold uppercase lg:justify-start"
-            >
-              <div
-                class="flex items-center text-lg text-white font-bold"
-              >
-                Bądźmy w kontakcie
-              </div>
-            </div>
-            <div class="mt-8 text-lg leading-normal">
-              <div class="flex flex-col items-end lg:items-start">
+            <div class="mt-8">
+              <div class="flex flex-col items-end gap-[0.63rem] lg:items-start">
+                <h6 class="mb-4 font-medium underline decoration-2 decoration-white underline-offset-10">
+                  Adres
+                </h6>
                 <p>
                   ul. Oswobodzenia 1/C3
-                </p>
-                <p class="mb-3">
+                  <br>
                   40-403 Katowice
                 </p>
                 <NuxtLink
-                  class="mb-3 border-b-2 border-white border-solid pb-1"
+                  class="underline decoration-2 decoration-white underline-offset-10"
                   to="tel:+48570566238"
                 >
                   +48 570 566 238
                 </NuxtLink>
                 <NuxtLink
-                  class="mb-3 border-b-2 border-white border-solid pb-1"
+                  class="underline decoration-2 decoration-white underline-offset-10"
                   to="mailto:pracownia@gwasz.pl"
                 >
                   pracownia@gwasz.pl
@@ -121,31 +105,31 @@ const activeLocale = computed(() => {
         </div>
         <div class="mt-16">
           <div class="flex flex-wrap items-center justify-between gap-4">
-            <div class="order-3 text-base md:order-1">
+            <div class="order-3 md:order-1">
               © 2025 Pracownia Gwasz
             </div>
             <div class="order-4 mx-4 flex gap-4 md:order-3">
               <template v-for="lang in locales" :key="lang.code">
                 <div
-                  class="relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden"
+                  class="languages relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden"
                   :class="activeLocale[0].code === lang.code ? 'rounded-md bg-white px-3 py-2' : null"
                 >
-                  <NuxtLink :to="switchLocalePath(lang.code)" class="overflow-hidden text-lg">
+                  <NuxtLink :to="switchLocalePath(lang.code)" class="overflow-hidden">
                     {{ lang.name ?? lang.code }}
                   </NuxtLink>
                 </div>
               </template>
             </div>
-            <div class="order-1 flex gap-5 text-base md:order-3">
+            <div class="order-1 flex gap-5 md:order-3">
               <div class="inline-block max-w-full">
                 <p
-                  class="border-b-2 border-white border-solid pb-1"
+                  class="underline decoration-2 decoration-white underline-offset-10"
                 >
                   Polityka prywatności
                 </p>
               </div><div class="inline-block max-w-full">
                 <p
-                  class="border-b-2 border-white border-solid pb-1"
+                  class="underline decoration-2 decoration-white underline-offset-10"
                 >
                   Regulamin
                 </p>
@@ -174,5 +158,9 @@ const activeLocale = computed(() => {
 footer,
 .waves-accent {
   background-color: var(--secondary);
+}
+
+.languages {
+  font-size: var(--font-size-h6);
 }
 </style>

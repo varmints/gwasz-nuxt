@@ -82,7 +82,7 @@ onMounted(() => {
           id="header-logo"
           v-gsap.magnetic
           href="/"
-          class="font-gwasz text-primary-content inline-block max-w-full justify-self-start text-4xl lg:justify-self-center"
+          class="font-gwasz text-primary-content inline-block max-w-full justify-self-start lg:justify-self-center"
         >GWASZ</a>
       </div>
 
@@ -114,14 +114,14 @@ onMounted(() => {
         class="absolute left-0 top-0 h-full w-full bg-white opacity-0"
       />
       <div
-        class="z-20 w-full flex flex-col flex-wrap items-center justify-center overflow-hidden font-semibold"
+        class="z-20 w-full flex flex-col flex-wrap items-center justify-center font-semibold"
       >
-        <div class="flex flex-col items-center gap-2">
+        <div class="flex flex-col items-center gap-14">
           <div
             v-for="(page, index) in dummyPages"
             :key="index"
             data-nav-item
-            class="relative flex items-center justify-start gap-4 overflow-hidden pr-10"
+            class="relative flex items-center justify-start gap-4 pr-10"
           >
             <div
               data-nav-border-reveal
@@ -132,7 +132,7 @@ onMounted(() => {
             </div>
             <div
               data-nav-text-reveal
-              class="cursor-pointer overflow-hidden text-5xl md:text-5xl md:leading-tight"
+              class="asci-face cursor-pointer"
             >
               {{ page.title }}
             </div>
@@ -144,6 +144,9 @@ onMounted(() => {
 </template>
 
 <style>
+#header-logo {
+  font-size: var(--font-size-h3);
+}
 .menu-icon {
   position: relative;
   width: 50px;
@@ -219,5 +222,9 @@ onMounted(() => {
 }
 .split-child {
   display: inline-block;
+}
+
+.asci-face {
+  font-size: var(--font-size-h2);
 }
 </style>

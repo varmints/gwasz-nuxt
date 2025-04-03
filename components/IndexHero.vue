@@ -4,7 +4,7 @@
 <template>
   <div
     id="hero"
-    class="relative flex items-center justify-center pb-16 pt-32 text-sm font-medium lg:px-20 lg:pt-44"
+    class="relative flex items-center justify-center pb-16 pt-32 font-medium lg:px-20 lg:pt-44"
   >
     <PrimitivesContainer>
       <div class="m-auto w-full flex-col items-center">
@@ -14,13 +14,13 @@
           <div
             class="row-start-1 flex flex-col items-start justify-start gap-2"
           >
-            <h1 class="text-secondary mx-0 my-3 text-5xl font-bold">
+            <h1 class="text-secondary mx-0 my-3 font-bold">
               Kursy <span class="text-white">malarstwa</span> i <span class="text-white">rysunku</span>
             </h1>
             <div class="mt-6 lg:mt-10">
               <div>
-                <p class="text-secondary mb-10 text-2xl font-semibold">
-                  Dla dzieci, młodzieży i dorosłych. <span class="text-white">Zapisz się na zajęcia
+                <p class="text-secondary mb-10 font-semibold">
+                  <span class="text-white">W Katowicach.</span> Dla dzieci, młodzieży i dorosłych. <span class="text-white">Zapisz się na zajęcia
                     próbne:</span>
                 </p>
                 <div class="flex flex-wrap gap-8">
@@ -68,5 +68,9 @@
 h1,
 p {
   text-wrap: balance;
+}
+
+p {
+  font-size: var(--font-size-h5);
 }
 </style>

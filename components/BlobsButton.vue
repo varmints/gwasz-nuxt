@@ -39,7 +39,7 @@ defineProps({
   z-index: 1;
   display: block;
   position: relative;
-  padding: 1.44rem 2.074rem;
+  padding: 1em 1.2em;
   text-align: center;
   text-transform: uppercase;
   color: var(--primary);
@@ -48,7 +48,7 @@ defineProps({
   outline: none;
   transition: color 0.5s;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 9999px;
 }
 .blob-btn:before {
   content: '';

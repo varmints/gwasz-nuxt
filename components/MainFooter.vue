@@ -27,7 +27,7 @@ const activeLocale = computed(() => {
                     class="flex flex-col items-start gap-[0.63rem]"
                   >
                     <h6
-                      class="mb-4 font-medium underline decoration-2 decoration-white underline-offset-10"
+                      class="mb-4 font-semibold underline decoration-2 decoration-white underline-offset-6 sm:font-medium sm:underline-offset-10"
                     >
                       Sociale
                     </h6>
@@ -57,7 +57,7 @@ const activeLocale = computed(() => {
                   class="flex flex-col items-start gap-[0.63rem]"
                 >
                   <h6
-                    class="mb-4 font-medium underline decoration-2 decoration-white underline-offset-10"
+                    class="mb-4 font-semibold underline decoration-2 decoration-white underline-offset-6 sm:font-medium sm:underline-offset-10"
                   >
                     Wskazówki dojazdu
                   </h6>
@@ -79,22 +79,22 @@ const activeLocale = computed(() => {
           <div class="col-span-1 row-span-1">
             <div class="mt-8">
               <div class="flex flex-col items-end gap-[0.63rem] lg:items-start">
-                <h6 class="mb-4 font-medium underline decoration-2 decoration-white underline-offset-10">
+                <h6 class="mb-4 font-semibold underline decoration-2 decoration-white underline-offset-6 sm:font-medium sm:underline-offset-10">
                   Adres
                 </h6>
-                <p>
+                <p class="text-right sm:text-left">
                   ul. Oswobodzenia 1/C3
                   <br>
                   40-403 Katowice
                 </p>
                 <NuxtLink
-                  class="underline decoration-2 decoration-white underline-offset-10"
+                  class="underline decoration-2 decoration-white underline-offset-6 sm:underline-offset-10"
                   to="tel:+48570566238"
                 >
                   +48 570 566 238
                 </NuxtLink>
                 <NuxtLink
-                  class="underline decoration-2 decoration-white underline-offset-10"
+                  class="underline decoration-2 decoration-white underline-offset-6 sm:underline-offset-10"
                   to="mailto:pracownia@gwasz.pl"
                 >
                   pracownia@gwasz.pl
@@ -123,13 +123,13 @@ const activeLocale = computed(() => {
             <div class="order-1 flex gap-5 md:order-3">
               <div class="inline-block max-w-full">
                 <p
-                  class="underline decoration-2 decoration-white underline-offset-10"
+                  class="underline decoration-2 decoration-white underline-offset-6 sm:underline-offset-10"
                 >
                   Polityka prywatności
                 </p>
               </div><div class="inline-block max-w-full">
                 <p
-                  class="underline decoration-2 decoration-white underline-offset-10"
+                  class="underline decoration-2 decoration-white underline-offset-6 sm:underline-offset-10"
                 >
                   Regulamin
                 </p>

@@ -30,7 +30,7 @@
   --base-font-size: 1rem; /* Odpowiada font-size na <html> */
 
   /* Skala Mobile (Ratio: 1.200) */
-  --font-scale-mobile-ratio: 1.2;
+  --font-scale-mobile-ratio: 1.25;
 
   /* Rozmiary fontów - Mobile */
   --font-size-small: calc(var(--base-font-size) / var(--font-scale-mobile-ratio)); /* ~0.833rem */

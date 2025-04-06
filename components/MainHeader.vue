@@ -95,6 +95,7 @@ onMounted(() => {
       <div v-gsap.magnetic class="z-40 col-span-1 row-span-1 col-start-3 justify-self-end">
         <div class="relative h-16 flex items-center justify-center lg:h-24 lg:w-24">
           <div class="menu-icon">
+            <label for="menu-toggle" class="sr-only">Menu</label>
             <input id="menu-toggle" class="menu-icon__checkbox" type="checkbox">
             <div>
               <span />

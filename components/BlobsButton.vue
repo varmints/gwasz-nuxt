@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="relative overflow-hidden">
-    <NuxtLink class="blob-btn text-base" :to="link">
+    <NuxtLink class="blob-btn" :to="link">
       <slot />
       <span class="blob-btn__inner">
         <span class="blob-btn__blobs">

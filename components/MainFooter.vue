@@ -61,7 +61,7 @@ const activeLocale = computed(() => {
                   >
                     {{ t('footer.directions') }}
                   </h6>
-                  <ul class="mb-3 list-none text-base">
+                  <ul class="mb-3 list-none">
                     <li>
                       <NuxtLink to="https://maps.app.goo.gl/zh6tuc4QY35S5NU2A" target="_blank">
                         {{ t('footer.directionsMap') }}
@@ -108,11 +108,11 @@ const activeLocale = computed(() => {
             <div class="order-3 md:order-1">
               {{ t('footer.copyright') }}
             </div>
-            <div class="order-4 mx-4 flex gap-4 md:order-3">
+            <div class="order-4 mx-4 flex gap-2 md:order-3">
               <template v-for="lang in locales" :key="lang.code">
                 <div
-                  class="languages relative flex cursor-pointer items-center justify-start gap-4 overflow-hidden"
-                  :class="activeLocale[0].code === lang.code ? 'rounded-md bg-white px-3 py-2' : null"
+                  class="languages relative flex cursor-pointer items-center justify-start gap-4 px-3 py-2"
+                  :class="activeLocale[0].code === lang.code ? 'rounded-md bg-white' : null"
                 >
                   <NuxtLink :to="switchLocalePath(lang.code)" class="overflow-hidden">
                     {{ lang.name ?? lang.code }}

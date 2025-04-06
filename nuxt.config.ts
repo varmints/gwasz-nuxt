@@ -53,7 +53,7 @@ export default defineNuxtConfig({
     },
   },
   gtag: {
-    id: 'G-XXXXXXXXXX', // Replace with your actual Google Analytics ID when you have one
+    id: 'G-0GJY8GZRXW', // Replace with your actual Google Analytics ID when you have one
   },
   site: {
     url: 'https://gwasz.pl',

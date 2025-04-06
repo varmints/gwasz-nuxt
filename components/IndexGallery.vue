@@ -53,8 +53,7 @@ onMounted(() => {
 }
 figure {
   --w: 300px; /* image width */
-  --r: 0.5em; /* radius */
-  /* --_x: calc(var(--w) - 3 * var(--r) - 0.5lh); */
+  --r: 1em; /* radius */
   --figcaption-width: 0;
   --line-height: 3;
   --_x: calc(var(--figcaption-width) - calc(var(--line-height) * 2) * calc(var(--font-size-h6) / 2));

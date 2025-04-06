@@ -4,7 +4,7 @@ export default defineI18nConfig(() => ({
   messages: {
     pl: {
       layouts: {
-        title: 'Pracownia Gwasz - kursy malarstwa i rysunku',
+        title: 'Pracownia Gwasz - kursy malarstwa i rysunku Katowice',
         description: 'Kursy malarstwa i rysunku dla dzieci, młodzieży i dorosłych w Katowicach. Zapisz się na zajęcia próbne.',
       },
       header: {
@@ -40,7 +40,7 @@ export default defineI18nConfig(() => ({
     },
     en: {
       layouts: {
-        title: 'Workshop Gwasz - Painting and drawing courses',
+        title: 'Workshop Gwasz - Painting and drawing courses in Katowice',
         description: 'Painting and drawing courses for children, adolescents and adults in Katowice. Sign up for trial classes.',
       },
       header: {

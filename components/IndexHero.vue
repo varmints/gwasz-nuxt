@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+const { t } = useI18n()
 </script>
 
 <template>
@@ -14,33 +15,32 @@
           <div
             class="row-start-1 flex flex-col items-start justify-start gap-2"
           >
-            <h1 class="text-secondary mx-0 my-3 font-bold">
-              Kursy <span class="text-white">malarstwa</span> i <span class="text-white">rysunku</span>
+            <h1 class="mx-0 my-3 text-white font-bold">
+              {{ t('hero.title') }}
             </h1>
             <div class="mt-6 lg:mt-10">
               <div>
                 <p class="text-secondary mb-10 font-semibold">
-                  <span class="text-white">w Katowicach.</span> Dla dzieci, młodzieży i dorosłych. <span class="text-white">Zapisz się na zajęcia
-                    próbne:</span>
+                  <span class="text-white">{{ t('hero.subtitle').split('.')[0] }}.</span> {{ t('hero.subtitle').split('.')[1] }} <span class="text-white">{{ t('hero.subtitle').split('.')[2] }}</span>
                 </p>
                 <div class="flex flex-wrap gap-8">
                   <BlobsButton v-gsap.magnetic link="mailto:pracownia@gwasz.pl">
-                    Email
+                    {{ t('hero.email') }}
                   </BlobsButton>
                   <BlobsButton v-gsap.magnetic link="tel:+48570566238">
-                    Telefon
+                    {{ t('hero.phone') }}
                   </BlobsButton>
                   <BlobsButton v-gsap.magnetic link="https://www.instagram.com/gwasz_pracownia/">
-                    Instagram
+                    {{ t('hero.instagram') }}
                   </BlobsButton>
                   <BlobsButton v-gsap.magnetic link="https://wa.me/+48570566238">
-                    Whatsapp
+                    {{ t('hero.whatsapp') }}
                   </BlobsButton>
                   <BlobsButton v-gsap.magnetic link="https://www.tiktok.com/@gwasz_pracownia">
-                    Tiktok
+                    {{ t('hero.tiktok') }}
                   </BlobsButton>
                   <BlobsButton v-gsap.magnetic link="https://www.facebook.com/profile.php?id=61572459933698">
-                    Facebook
+                    {{ t('hero.facebook') }}
                   </BlobsButton>
                 </div>
               </div>

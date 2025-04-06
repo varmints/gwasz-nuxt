@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { locale, locales } = useI18n()
+const { locale, locales, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
 const activeLocale = computed(() => {
@@ -29,7 +29,7 @@ const activeLocale = computed(() => {
                     <h6
                       class="mb-4 font-semibold underline decoration-2 decoration-white underline-offset-6 sm:font-medium sm:underline-offset-10"
                     >
-                      Sociale
+                      {{ t('footer.social') }}
                     </h6>
                     <ul
                       class="mb-3 list-none"
@@ -59,16 +59,16 @@ const activeLocale = computed(() => {
                   <h6
                     class="mb-4 font-semibold underline decoration-2 decoration-white underline-offset-6 sm:font-medium sm:underline-offset-10"
                   >
-                    Wskazówki dojazdu
+                    {{ t('footer.directions') }}
                   </h6>
                   <ul class="mb-3 list-none text-base">
                     <li>
                       <NuxtLink to="https://maps.app.goo.gl/zh6tuc4QY35S5NU2A" target="_blank">
-                        Kliknij, aby otrzymać wskazówki dojazdu w mapach Google.
+                        {{ t('footer.directionsMap') }}
                       </NuxtLink>
                     </li>
                     <li class="mt-4">
-                      🅿️ 🚘 Bezpłatny parking.
+                      {{ t('footer.parking') }}
                     </li>
                   </ul>
                 </div>
@@ -80,7 +80,7 @@ const activeLocale = computed(() => {
             <div class="mt-8">
               <div class="flex flex-col items-end gap-[0.63rem] lg:items-start">
                 <h6 class="mb-4 font-semibold underline decoration-2 decoration-white underline-offset-6 sm:font-medium sm:underline-offset-10">
-                  Adres
+                  {{ t('footer.address') }}
                 </h6>
                 <p class="text-right sm:text-left">
                   ul. Oswobodzenia 1/C3
@@ -106,7 +106,7 @@ const activeLocale = computed(() => {
         <div class="mt-16">
           <div class="flex flex-wrap items-center justify-between gap-4">
             <div class="order-3 md:order-1">
-              © 2025 Pracownia Gwasz
+              {{ t('footer.copyright') }}
             </div>
             <div class="order-4 mx-4 flex gap-4 md:order-3">
               <template v-for="lang in locales" :key="lang.code">
@@ -125,13 +125,13 @@ const activeLocale = computed(() => {
                 <p
                   class="underline decoration-2 decoration-white underline-offset-6 sm:underline-offset-10"
                 >
-                  Polityka prywatności
+                  {{ t('footer.privacyPolicy') }}
                 </p>
               </div><div class="inline-block max-w-full">
                 <p
                   class="underline decoration-2 decoration-white underline-offset-6 sm:underline-offset-10"
                 >
-                  Regulamin
+                  {{ t('footer.terms') }}
                 </p>
               </div>
             </div>

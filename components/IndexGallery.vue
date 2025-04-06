@@ -14,9 +14,9 @@ onMounted(() => {
 <template>
   <div class="relative flex flex-col items-center justify-center pb-16 pt-16 text-sm font-medium lg:px-20">
     <h2 class="relative mb-14 text-white font-bold lowercase">
-      <span class="text-secondary">Oferta</span> zajęć
+      Oferta zajęć
     </h2>
-    <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 sm:grid-cols-2">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 sm:grid-cols-2">
       <figure class="alt">
         <NuxtImg src="/images/gallery/01.jpg" alt="5-10 lat" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>5-10 lat</figcaption>

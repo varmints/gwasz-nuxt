@@ -13,7 +13,7 @@ onMounted(() => {
 
 <template>
   <div class="relative flex flex-col items-center justify-center pb-16 pt-16 text-sm font-medium lg:px-20">
-    <h2 class="relative mb-14 text-white font-bold">
+    <h2 class="relative mb-14 text-white font-bold lowercase">
       <span class="text-secondary">Oferta</span> zajęć
     </h2>
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 sm:grid-cols-2">
@@ -29,7 +29,7 @@ onMounted(() => {
         <NuxtImg src="/images/gallery/03.jpg" alt="Dorośli" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>Dorośli</figcaption>
       </figure>
-      <figure>
+      <figure class="alt">
         <NuxtImg src="/images/gallery/04.jpg" alt="Półkolonie" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>Półkolonie</figcaption>
       </figure>
@@ -37,7 +37,7 @@ onMounted(() => {
         <NuxtImg src="/images/gallery/05.jpg" alt="Urodziny" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>Urodziny</figcaption>
       </figure>
-      <figure class="alt">
+      <figure>
         <NuxtImg src="/images/gallery/06.jpg" alt="Warsztaty" loading="lazy" width="300" height="300" fit="cover" />
         <figcaption>Warsztaty</figcaption>
       </figure>
@@ -56,12 +56,14 @@ figure {
   --r: 0.5em; /* radius */
   /* --_x: calc(var(--w) - 3 * var(--r) - 0.5lh); */
   --figcaption-width: 0;
-  --_x: calc(var(--figcaption-width) - 3 * calc(var(--font-size-h4) / 2));
+  --line-height: 3;
+  --_x: calc(var(--figcaption-width) - calc(var(--line-height) * 2) * calc(var(--font-size-h6) / 2));
   display: grid;
   place-items: end end;
-  font-size: var(--font-size-h4);
+  font-size: var(--font-size-h6);
   font-weight: 700;
-  line-height: 1.5;
+  line-height: var(--line-height);
+  text-transform: uppercase;
   cursor: pointer;
 }
 figure.alt {
@@ -99,8 +101,8 @@ figure.alt img {
 figure figcaption {
   box-sizing: border-box;
   translate: calc(0.5lh - var(--r)) calc(0.5lh - var(--r));
-  background: var(--secondary);
-  color: #fff;
+  background: var(--background);
+  color: var(--primary);
   border-inline: calc(0.5lh - 0.5ch) solid #0000;
   clip-path: inset(5px round 1lh);
   text-align: center;

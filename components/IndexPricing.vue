@@ -4,10 +4,10 @@
 
 <template>
   <div class="relative mx-5 flex flex-col items-center justify-center pb-16 pt-16 font-medium lg:mx-20">
-    <h2 class="relative mb-14 text-white font-bold">
+    <h2 class="relative mb-14 text-white font-bold lowercase">
       <span class="text-secondary">Cennik</span> zajęć
     </h2>
-    <div class="background-texture pricing-card">
+    <div class="background-texture pricing-card p-10 md:p-12">
       <h4 class="pricing-title">
         5-10 lat (1.5h) *
       </h4>
@@ -86,7 +86,6 @@
   position: relative;
   width: 100%;
   background-color: var(--secondary);
-  padding: 3rem;
   border-radius: 50px;
 }
 

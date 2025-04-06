@@ -20,7 +20,7 @@
             <div class="mt-6 lg:mt-10">
               <div>
                 <p class="text-secondary mb-10 font-semibold">
-                  <span class="text-white">W Katowicach.</span> Dla dzieci, młodzieży i dorosłych. <span class="text-white">Zapisz się na zajęcia
+                  <span class="text-white">w Katowicach.</span> Dla dzieci, młodzieży i dorosłych. <span class="text-white">Zapisz się na zajęcia
                     próbne:</span>
                 </p>
                 <div class="flex flex-wrap gap-8">
